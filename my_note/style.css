@@ -1,0 +1,23 @@
+.form-group {
+  margin-bottom: 20px;
+}
+
+#notes-section {
+  color: #222831
+  margin-bottom: 5rem;
+  border-top: 4px solid #30475E;
+  border-bottom: 4px solid #30475E;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 4px;
+}
+
+#display-section {
+  color: #222831
+  margin-top: 5rem;
+  border-top: 4px solid #30475E;
+  border-bottom: 4px solid #30475E;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 4px;
+}
