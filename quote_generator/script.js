@@ -1,3 +1,9 @@
+const quoteContainer = document.getElementById("quote-container");
+const quoteText = document.getElementById("quote");
+const authorText = document.getElementById("author");
+const twitterBtn = document.getElementById("twitter");
+const newQuoteBtn = document.getElementById("new-quote");
+
 // Get Quote From API
 
 let apiQuote = [];
@@ -7,8 +13,25 @@ let apiQuote = [];
 function newQuote() {
   // pick random quote from API quote array
   const quote = apiQuote[Math.floor(Math.random() * apiQuote.length)];
-  console.log(quote);
+
+  //check if autor field is blank
+  if (quote.author == null) {
+    authorText.textContent = "Unknown";
+  } else {
+    authorText.textContent = quote.author;
+  }
+
+  // Check quote length to determine the style length
+  if (quote.text.length > 120) {
+    quoteText.classList.add("long-quote");
+  } else {
+    quoteText.classList.remove("long-quote");
+  }
+
+  quoteText.textContent = quote.text;
 }
+
+// Get Quotes From API
 
 async function getQuotes() {
   const apiUrl = "https://type.fit/api/quotes";
