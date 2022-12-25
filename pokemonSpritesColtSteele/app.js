@@ -2,7 +2,7 @@ const container = document.getElementById('container');
 // https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png
 
 
-for(let i = 1; i < 20; i++){
+for(let i = 1; i < 31; i++){
     const pokemon = document.createElement('div');
     const label = document.createElement('span');
     const newImg = document.createElement('img');
