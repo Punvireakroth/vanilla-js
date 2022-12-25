@@ -1,0 +1,18 @@
+div {
+    display: inline-flex;
+    width: 200px;
+    height: 200px;
+    background-color: #A6BB8D;
+    margin: 20px;
+    border-radius: 4px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+img {
+    display: block;
+}
+
+span {
+    display: block;
+}
